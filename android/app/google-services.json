@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "648251953953",
+    "firebase_url": "https://tutor-me-c3800.firebaseio.com",
+    "project_id": "tutor-me-c3800",
+    "storage_bucket": "tutor-me-c3800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648251953953:android:29028602c1440734",
+        "android_client_info": {
+          "package_name": "com.tutorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648251953953-58gd87uaj4me6790143saai8a9d452at.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzf_StCJF6V2kuIVh2SWO0Nh8SSO1Bh9U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
