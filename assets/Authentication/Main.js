@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Platform, Image, Text, View } from 'react-native';
+import { StyleSheet, Platform, Image, Text, View, Button } from 'react-native';
 import firebase from 'react-native-firebase';
 
 export default class Main extends React.Component {
@@ -8,6 +8,16 @@ export default class Main extends React.Component {
     const { currentUser } = firebase.auth()
     this.setState({ currentUser })
 }
+
+handleLogout = () => {
+  firebase.auth().signOut()
+  .then(function() {
+    this.props.navigation.navigate('Login')
+  })
+  .catch(function(err) {
+    console.log(err)
+  })
+}
 render() {
     const { currentUser } = this.state
 return (
@@ -15,6 +25,10 @@ return (
         <Text>
           Hi {currentUser && currentUser.email}!
         </Text>
+        <Button
+          title="Logout"
+          onPress={this.handleLogout}
+        />
       </View>
     )
   }

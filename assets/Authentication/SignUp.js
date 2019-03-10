@@ -35,10 +35,6 @@ render() {
           value={this.state.password}
         />
         <Button title="Sign Up" onPress={this.handleSignUp} />
-        <Button
-          title="Already have an account? Login"
-          onPress={() => this.props.navigation.navigate('Login')}
-        />
       </View>
     )
   }
