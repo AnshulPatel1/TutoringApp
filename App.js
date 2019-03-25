@@ -15,13 +15,17 @@ import Loading from './assets/Authentication/Loading';
 import SignUp from './assets/Authentication/SignUp';
 import Login from './assets/Authentication/Login';
 import Main from './assets/Authentication/Main';
+import Student from './profile/Student';
+import Tutor from './profile/Tutor';
 
 const RootStack = createSwitchNavigator(
   {
     Loading: Loading,
     SignUp: SignUp,
     Login: Login,
-    Main: Main
+    Main: Main,
+    Student: Student, 
+    Tutor: Tutor, 
   },
   {
     initialRouteName: 'Loading'
